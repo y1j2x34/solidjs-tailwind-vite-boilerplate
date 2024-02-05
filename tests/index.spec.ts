@@ -1,7 +1,8 @@
-import { hello } from '~/index';
+import { hello } from '@/index';
+import { describe, it, expect } from 'vitest';
 
-describe('test hello', () => {
-    it('should hello() return "Hello"', () => {
-        expect(hello()).toBe('Hello');
+describe('hello', () => {
+    it('should say hello to the world', () => {
+        expect(hello()).toBe('world');
     });
 });

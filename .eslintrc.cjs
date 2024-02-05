@@ -1,5 +1,6 @@
 module.exports = {
     parser: '@typescript-eslint/parser',
+    erxtends: ['eslint:recommented', 'plugin:solid/typescript'],
     overrides: [
         {
             files: ['*.ts', '*.tsx'],
@@ -21,7 +22,7 @@ module.exports = {
             files: ['*.mjs', '*.js', '*.jsx', '*.es', '*.cjs'],
         },
     ],
-    plugins: ['@typescript-eslint', 'prettier'],
+    plugins: ['@typescript-eslint', 'prettier', 'solid'],
 
     rules: {
         'prettier/prettier': 'error',

@@ -7,16 +7,18 @@
         "lib": ["ESNext", "DOM"],
         "skipLibCheck": true,
         "esModuleInterop": true,
-        "moduleResolution": "Bundler",
-        "resolveJsonModule": true,
+        "moduleResolution": "node",
         "isolatedModules": true,
         "strict": true,
         "noImplicitAny": true,
         "noFallthroughCasesInSwitch": true,
         "noUncheckedIndexedAccess": true,
+        "forceConsistentCasingInFileNames": true,
+        "jsx": "preserve",
+        "jsxImportSource": "solid-js",
         "paths": {
-            "~/*": ["./src/*"]
+            "@/*": ["./src/*"]
         }
     },
-    "include": ["src", "tests", "dev", "jest.config.ts", "jest.setup.ts", "tsup.config.ts"]
+    "include": ["src", "tests", "dev", "vite.config.ts"]
 }
